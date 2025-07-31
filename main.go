@@ -9,12 +9,12 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/codegangsta/cli"
+	"github.com/urfave/cli"
 
-	"github.com/yudai/gotty/backend/localcommand"
-	"github.com/yudai/gotty/pkg/homedir"
-	"github.com/yudai/gotty/server"
-	"github.com/yudai/gotty/utils"
+	"github.com/kernel-punk/gotty/backend/localcommand"
+	"github.com/kernel-punk/gotty/pkg/homedir"
+	"github.com/kernel-punk/gotty/server"
+	"github.com/kernel-punk/gotty/utils"
 )
 
 func main() {
