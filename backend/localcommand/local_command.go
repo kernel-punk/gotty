@@ -1,14 +1,13 @@
 package localcommand
 
 import (
+	"github.com/creack/pty"
+	"github.com/pkg/errors"
 	"os"
 	"os/exec"
 	"syscall"
 	"time"
 	"unsafe"
-
-	"github.com/kr/pty"
-	"github.com/pkg/errors"
 )
 
 const (
