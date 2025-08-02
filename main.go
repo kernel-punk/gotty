@@ -1,13 +1,13 @@
 package main
 
 import (
-	"github.com/kernel-punk/gotty/gottyLib"
+	"github.com/kernel-punk/gotty/gottylib"
 	"log"
 )
 
 func main() {
 
-	if err := gottyLib.Run(gottyLib.RunParameters{
+	if err := gottylib.Run(gottylib.RunParameters{
 
 		Cmd:  "htop",
 		Args: []string{},

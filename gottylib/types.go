@@ -1,4 +1,4 @@
-package gottyLib
+package gottylib
 
 type RunParameters struct {
 	Cmd  string

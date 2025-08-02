@@ -1,4 +1,4 @@
-package gottyLib
+package gottylib
 
 import (
 	"context"
