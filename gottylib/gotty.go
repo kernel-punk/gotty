@@ -8,6 +8,7 @@ import (
 	"github.com/kernel-punk/gotty/utils"
 	"os"
 	"os/signal"
+	"strconv"
 	"syscall"
 )
 
@@ -42,6 +43,10 @@ func Run(runParameters RunParameters) error {
 		"argv":     runParameters.Args,
 		"hostname": hostname,
 	}
+
+	appOptions.PermitWrite = true
+
+	appOptions.Port = strconv.Itoa(runParameters.Port)
 
 	srv, err := server.New(factory, appOptions)
 	if err != nil {

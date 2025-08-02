@@ -12,6 +12,7 @@ func main() {
 		Cmd:  "htop",
 		Args: []string{},
 		Ssl:  false,
+		Port: 7777,
 	}); err != nil {
 		log.Fatal(err)
 	}
