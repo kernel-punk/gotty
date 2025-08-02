@@ -6,6 +6,7 @@ BUILD_OPTIONS = -ldflags "-X main.Version=$(VERSION) -X main.CommitID=$(GIT_COMM
 gotty: main.go server/*.go webtty/*.go backend/*.go Makefile
 	mkdir -p builds
 	go build -o builds/gotty ${BUILD_OPTIONS}
+	$(PWD)/builds/gotty
 
 .PHONY: asset
 asset: bindata/static/js/gotty-bundle.js bindata/static/index.html bindata/static/favicon.png bindata/static/css/index.css bindata/static/css/xterm.css bindata/static/css/xterm_customize.css
